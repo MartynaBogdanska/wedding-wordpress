@@ -1,18 +1,52 @@
-*.log
-wp-config.php
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/blogs.dir/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/uploads/
-wp-content/wp-cache-config.php
-wp-content/plugins/hello.php
+# Exclude WordPress core
+/wordpress/*.log
+/wordpress/.htaccess
+/wordpress/index.php
+/wordpress/license.txt
+/wordpress/readme.html
+/wordpress/wp-activate.php
+/wordpress/wp-admin
+/wordpress/wp-blog-header.php
+/wordpress/wp-comments-post.php
+/wordpress/wp-config-sample.php
+/wordpress/wp-cron.php
+/wordpress/wp-includes
+/wordpress/wp-links-opml.php
+/wordpress/wp-load.php
+/wordpress/wp-login.php
+/wordpress/wp-mail.php
+/wordpress/wp-settings.php
+/wordpress/wp-signup.php
+/wordpress/wp-trackback.php
+/wordpress/xmlrpc.php
 
-/.htaccess
-/license.txt
-/readme.html
-/sitemap.xml
-/sitemap.xml.gz
+# Exclude wordpress content
+/wordpress/wp-content/uploads/
+/wordpress/wp-content/blogs.dir/
+/wordpress/wp-content/upgrade/*
+/wordpress/wp-content/backup-db/*
+/wordpress/wp-content/advanced-cache.php
+/wordpress/wp-content/cache/*
+/wordpress/wp-content-cache/supercache/*
+/wordpress/wp-content/wflogs/
 
+# Exclude wordpress admin
+/wordpress/wp-admin/*
+
+# Exclude WordPress themes
+/wordpress/wp-content/themes/twenty*
+/wordpress/wp-content/uploads
+/wordpress/wp-content/upgrade
+/wordpress/sitemap.*
+
+# Exclude files containing sensitive information.
+/wordpress/wp-config.php
+/wordpress/*.sql
+
+# Hidden and data files
+/wordpress/*.DS_Store
+/wordpress/*Thumbs.db
+/wordpress/*.sass-cache*
+/wordpress/*.bak
+/wordpress/*.swp
+/wordpress/node_modules/
