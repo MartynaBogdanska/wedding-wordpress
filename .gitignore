@@ -29,6 +29,7 @@
 /wordpress/wp-content/cache/*
 /wordpress/wp-content-cache/supercache/*
 /wordpress/wp-content/wflogs/
+/wordpress/wp-content/languages/*
 
 # Exclude wordpress admin
 /wordpress/wp-admin/*
@@ -38,6 +39,9 @@
 /wordpress/wp-content/uploads
 /wordpress/wp-content/upgrade
 /wordpress/sitemap.*
+
+# Exclude WordPress plugins
+/wordpress/wp-content/plugins/
 
 # Exclude files containing sensitive information.
 /wordpress/wp-config.php
