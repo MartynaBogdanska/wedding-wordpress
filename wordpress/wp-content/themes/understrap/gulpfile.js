@@ -175,7 +175,7 @@ gulp.task('cleancss', function() {
 });
 
 gulp.task('styles', function(callback){ gulpSequence('sass', 'minify-css')(callback) });
- 
+
 
 // Run:
 // gulp browser-sync
@@ -191,8 +191,8 @@ gulp.task('browser-sync', function() {
 gulp.task('watch-bs', ['browser-sync', 'watch', 'scripts'], function () { });
 
 
-// Run: 
-// gulp scripts. 
+// Run:
+// gulp scripts.
 // Uglifies and concat all JS files into one
 gulp.task('scripts', function() {
     var scripts = [
@@ -202,7 +202,9 @@ gulp.task('scripts', function() {
 
         // End - All BS4 stuff
 
-        basePaths.dev + 'js/skip-link-focus-fix.js'
+        basePaths.dev + 'js/skip-link-focus-fix.js',
+
+        basePaths.dev + 'js/sticky-menu.js'
     ];
   gulp.src(scripts)
     .pipe(concat('theme.min.js'))
@@ -231,7 +233,7 @@ gulp.task('copy-assets', function() {
 
     var stream = gulp.src(basePaths.node + 'bootstrap/dist/js/**/*.js')
         .pipe(gulp.dest(basePaths.dev + '/js/bootstrap4'));
-  
+
 // Copy all Bootstrap SCSS files
     gulp.src(basePaths.node + 'bootstrap/scss/**/*.scss')
         .pipe(gulp.dest(basePaths.dev + '/sass/bootstrap4'));
@@ -262,7 +264,7 @@ gulp.task('copy-assets', function() {
 // Copy Popper JS files
     gulp.src(basePaths.node + 'popper.js/dist/umd/popper.min.js')
         .pipe(gulp.dest(basePaths.js));
-        
+
     gulp.src(basePaths.node + 'popper.js/dist/umd/popper.js')
         .pipe(gulp.dest(basePaths.js));
     return stream;

@@ -1,0 +1,58 @@
+/*---------------------------------------------------------------------------*\
+    #COMPONENTS > #NAVIGATION
+\*---------------------------------------------------------------------------*/
+
+a.navbar-brand {
+    max-width: 55px;
+}
+
+#navbarNavDropdown {
+  li a {
+    color: $color-primary;
+  }
+}
+
+.wrapper-navbar {
+  transition: all 2s ease;
+}
+
+.scrolled {
+  position: fixed;
+  width:100%;
+  box-shadow: 0px 0px 5px #384047;
+  top: 0px;
+  transition: all 2s ease;
+  animation: smoothScroll 1s forwards;
+
+    .bg-dark {
+      opacity: 0.85;
+      height: 60px;
+      transition: all 2s ease;
+    }
+
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+h1#first-heading:before {
+    display: block;
+    content: " ";
+    height: 160px;
+    margin-top: -160px;
+    visibility: hidden;
+}
+
+h1:before {
+    display: block;
+    content: " ";
+    height: 70px;
+    margin-top: -70px;
+    visibility: hidden;
+}
