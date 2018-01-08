@@ -9557,7 +9557,7 @@ a.skip-link {
 /*---------------------------------------------------------------------------*    #BASE > #BODY
 \*---------------------------------------------------------------------------*/
 body {
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', 'Arial', sans-serif; }
 
 /*---------------------------------------------------------------------------*    #BASE > #TYPE
 \*---------------------------------------------------------------------------*/
@@ -9569,6 +9569,9 @@ a.navbar-brand {
 #navbarNavDropdown li a {
   color: #b3a571; }
 
+/**
+Fixed navigation on scroll
+**/
 .wrapper-navbar {
   transition: all 2s ease; }
 
@@ -9583,6 +9586,9 @@ a.navbar-brand {
     opacity: 0.85;
     height: 60px;
     transition: all 2s ease; }
+    @media (max-width: 767.99px) {
+      .scrolled .bg-dark {
+        height: auto; } }
 
 @keyframes smoothScroll {
   0% {
@@ -9590,18 +9596,21 @@ a.navbar-brand {
   100% {
     transform: translateY(0px); } }
 
-h1#first-heading:before {
-  display: block;
-  content: " ";
-  height: 160px;
-  margin-top: -160px;
-  visibility: hidden; }
-
+/**
+Adjusted H1 headings for fixed navigation
+**/
 h1:before {
   display: block;
   content: " ";
   height: 70px;
   margin-top: -70px;
+  visibility: hidden; }
+
+h1#first-heading:before {
+  display: block;
+  content: " ";
+  height: 160px;
+  margin-top: -160px;
   visibility: hidden; }
 
 /*

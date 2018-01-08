@@ -8,37 +8,56 @@ a.navbar-brand {
 
 #navbarNavDropdown {
   li a {
-    color: $color-primary;
+      color: $color-primary;
   }
 }
 
+/**
+Fixed navigation on scroll
+**/
+
 .wrapper-navbar {
-  transition: all 2s ease;
+    transition: all 2s ease;
 }
 
 .scrolled {
-  position: fixed;
-  width:100%;
-  box-shadow: 0px 0px 5px #384047;
-  top: 0px;
-  transition: all 2s ease;
-  animation: smoothScroll 1s forwards;
+    position: fixed;
+    width:100%;
+    box-shadow: 0px 0px 5px #384047;
+    top: 0px;
+    transition: all 2s ease;
+    animation: smoothScroll 1s forwards;
 
     .bg-dark {
-      opacity: 0.85;
-      height: 60px;
-      transition: all 2s ease;
-    }
+        opacity: 0.85;
+        height: 60px;
+        transition: all 2s ease;
 
+        @include media-breakpoint-down(sm) {
+            height: auto;
+        }
+    }
 }
 
 @keyframes smoothScroll {
-  0% {
-    transform: translateY(-200px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/**
+Adjusted H1 headings for fixed navigation
+**/
+
+h1:before {
+    display: block;
+    content: " ";
+    height: 70px;
+    margin-top: -70px;
+    visibility: hidden;
 }
 
 h1#first-heading:before {
@@ -46,13 +65,5 @@ h1#first-heading:before {
     content: " ";
     height: 160px;
     margin-top: -160px;
-    visibility: hidden;
-}
-
-h1:before {
-    display: block;
-    content: " ";
-    height: 70px;
-    margin-top: -70px;
     visibility: hidden;
 }
