@@ -204,7 +204,9 @@ gulp.task('scripts', function() {
 
         basePaths.dev + 'js/skip-link-focus-fix.js',
 
-        basePaths.dev + 'js/sticky-menu.js'
+        basePaths.dev + 'js/sticky-menu.js',
+
+        basePaths.dev + 'js/smooth-scrolling.js'
     ];
   gulp.src(scripts)
     .pipe(concat('theme.min.js'))
