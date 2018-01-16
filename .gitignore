@@ -40,6 +40,9 @@
 /wordpress/wp-content/upgrade
 /wordpress/sitemap.*
 
+# Exclude WordPress Understrap theme CSS files
+/wordpress/wp-content/themes/understrap/css
+
 # Exclude WordPress plugins
 /wordpress/wp-content/plugins/
 

@@ -9605,6 +9605,10 @@ h1:before {
   height: 70px;
   margin-top: -70px;
   visibility: hidden; }
+  @media (max-width: 767.99px) {
+    h1:before {
+      height: 260px;
+      margin-top: -260px; } }
 
 h1#first-heading:before {
   display: block;
@@ -9612,6 +9616,10 @@ h1#first-heading:before {
   height: 160px;
   margin-top: -160px;
   visibility: hidden; }
+  @media (max-width: 767.99px) {
+    h1#first-heading:before {
+      height: 260px;
+      margin-top: -260px; } }
 
 /*
 * Use existing Bootstrap 4 classes and

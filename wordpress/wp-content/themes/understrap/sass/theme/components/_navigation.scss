@@ -58,6 +58,11 @@ h1:before {
     height: 70px;
     margin-top: -70px;
     visibility: hidden;
+
+    @include media-breakpoint-down(sm) {
+        height: 260px;
+        margin-top: -260px;
+    }
 }
 
 h1#first-heading:before {
@@ -66,4 +71,9 @@ h1#first-heading:before {
     height: 160px;
     margin-top: -160px;
     visibility: hidden;
+
+    @include media-breakpoint-down(sm) {
+        height: 260px;
+        margin-top: -260px;
+    }
 }
