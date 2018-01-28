@@ -1,0 +1,63 @@
+/*---------------------------------------------------------------------------*\
+    #COMPONENTS > #PROJECTS
+\*---------------------------------------------------------------------------*/
+
+/* Style Overwrites of Portfolio-Pro Plugin */
+
+#lgx-portfolio .pp-filter-area {
+    display: none;
+}
+
+#lgx-portfolio .lgx-item-card {
+    box-shadow: none;
+}
+
+#lgx-portfolio .lgx-item-card .lgx-item-figure .lgx-figcaption {
+    background: none;
+}
+
+#lgx-portfolio .lgx-item-card .lgx-item-figure {
+    min-height: 140px;
+}
+
+#lgx-portfolio .pp-tooltip {
+    cursor: auto;
+}
+
+#lgx-portfolio .lgx-item-card .lgx-item-info .text {
+    display: block;
+    overflow: visible;
+    text-overflow: unset;
+    white-space: normal;
+}
+
+#lgx-portfolio .lgx-item-card .lgx-item-info .lgx-item-title span.text {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: 900;
+    color: $color-primary;
+}
+
+#lgx-portfolio .lgx-item-card .lgx-item-info .lgx-item-intro {
+    display: flex;
+}
+
+#lgx-portfolio .lgx-item-card .lgx-item-info .lgx-item-intro span.text.details-caption {
+    display: inline-flex;
+    min-width: 50px;
+    color: lighten(black, 70%)
+}
+
+#lgx-portfolio .lgx-item-card .lgx-item-info .lgx-item-intro span.text.details-text {
+    display: inline-flex;
+}
+
+#lgx-portfolio .lgx-item-card .lgx-item-info .lgx-item-intro span.text {
+    margin: 7px 0;
+    font-size: 12px;
+}
+
+#lgx-portfolio .lgx-item-card .lgx-item-info .lgx-item-intro span.text.location-text {
+    margin: 10px 0;
+    font-size: 14px;
+}
