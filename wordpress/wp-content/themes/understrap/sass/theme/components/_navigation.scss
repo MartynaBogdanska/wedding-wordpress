@@ -17,6 +17,7 @@ Fixed navigation on scroll
 **/
 
 .wrapper-navbar {
+    height: 90px;
     transition: all .5s ease;
 }
 
@@ -29,7 +30,7 @@ Fixed navigation on scroll
     animation: smoothScroll .5s forwards;
     z-index: 100;
 
-    .bg-dark {
+    &.bg-dark {
         opacity: 0.85;
         height: 60px;
         transition: all .5s ease;

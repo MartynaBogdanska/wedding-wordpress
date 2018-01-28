@@ -1,6 +1,6 @@
 jQuery(function() {
     /* Selecting the navigation */
-    var $nav = jQuery("#wrapper-navbar");
+    var $nav = jQuery("#site-navbar");
     /* Determing navigation Size */
     var $navSize =$nav.outerHeight();
     /* Detecting scroll event */

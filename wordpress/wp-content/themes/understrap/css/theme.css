@@ -9582,6 +9582,7 @@ a.navbar-brand {
 Fixed navigation on scroll
 **/
 .wrapper-navbar {
+  height: 90px;
   transition: all .5s ease; }
 
 .scrolled {
@@ -9592,12 +9593,12 @@ Fixed navigation on scroll
   transition: all .5s ease;
   animation: smoothScroll .5s forwards;
   z-index: 100; }
-  .scrolled .bg-dark {
+  .scrolled.bg-dark {
     opacity: 0.85;
     height: 60px;
     transition: all .5s ease; }
     @media (max-width: 767.99px) {
-      .scrolled .bg-dark {
+      .scrolled.bg-dark {
         height: auto; } }
 
 @keyframes smoothScroll {
