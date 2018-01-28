@@ -9557,6 +9557,7 @@ a.skip-link {
 /*---------------------------------------------------------------------------*    #BASE > #BODY
 \*---------------------------------------------------------------------------*/
 body {
+  position: relative;
   font-family: 'Raleway', 'Arial', sans-serif; }
 
 /*---------------------------------------------------------------------------*    #BASE > #SECTION
@@ -9607,28 +9608,50 @@ Fixed navigation on scroll
 
 /**
 Adjusted H1 headings for fixed navigation
-**/
+
+
 h1:before {
-  display: block;
-  content: " ";
-  height: 70px;
-  margin-top: -70px;
-  visibility: hidden; }
-  @media (max-width: 767.99px) {
-    h1:before {
-      height: 260px;
-      margin-top: -260px; } }
+    display: block;
+    content: " ";
+    height: 70px;
+    margin-top: -70px;
+    visibility: hidden;
+
+    @include media-breakpoint-down(sm) {
+        height: 260px;
+        margin-top: -260px;
+    }
+}
 
 h1#first-heading:before {
-  display: block;
-  content: " ";
-  height: 160px;
-  margin-top: -160px;
-  visibility: hidden; }
+    display: block;
+    content: " ";
+    height: 160px;
+    margin-top: -160px;
+    visibility: hidden;
+
+    @include media-breakpoint-down(sm) {
+        height: 260px;
+        margin-top: -260px;
+    }
+}
+**/
+/**
+*** Adjusted sections for fixed navigation
+**/
+#about,
+#projects,
+#careers,
+#contact {
+  padding: 60px 0;
+  margin-top: -40px; }
   @media (max-width: 767.99px) {
-    h1#first-heading:before {
-      height: 260px;
-      margin-top: -260px; } }
+    #about,
+    #projects,
+    #careers,
+    #contact {
+      padding: 85px 0;
+      margin-top: -80px; } }
 
 /*---------------------------------------------------------------------------*    #COMPONENTS > #PROJECTS
 \*---------------------------------------------------------------------------*/

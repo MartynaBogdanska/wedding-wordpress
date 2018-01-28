@@ -52,7 +52,7 @@ Fixed navigation on scroll
 
 /**
 Adjusted H1 headings for fixed navigation
-**/
+
 
 h1:before {
     display: block;
@@ -77,5 +77,24 @@ h1#first-heading:before {
     @include media-breakpoint-down(sm) {
         height: 260px;
         margin-top: -260px;
+    }
+}
+**/
+
+/**
+*** Adjusted sections for fixed navigation
+**/
+
+
+#about,
+#projects,
+#careers,
+#contact {
+    padding: 60px 0;
+    margin-top: -40px;
+
+    @include media-breakpoint-down(sm) {
+        padding: 85px 0;
+        margin-top: -80px;
     }
 }
