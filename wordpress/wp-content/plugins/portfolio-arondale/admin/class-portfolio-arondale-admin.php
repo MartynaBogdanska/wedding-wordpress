@@ -6,8 +6,8 @@
  * @link       http://logichunt.com
  * @since      1.0.0
  *
- * @package    Arondale_Projects
- * @subpackage Arondale_Projects/admin
+ * @package    Portfolio_Arondale
+ * @subpackage Portfolio_Arondale/admin
  */
 
 /**
@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Arondale_Projects
- * @subpackage Arondale_Projects/admin
+ * @package    Portfolio_Arondale
+ * @subpackage Portfolio_Arondale/admin
  * @author     LogicHunt <logichunt.info@gmail.com>
  */
-class Arondale_Projects_Admin {
+class Portfolio_Arondale_Admin {
 
 	/**
 	 * The ID of this plugin.
@@ -42,7 +42,7 @@ class Arondale_Projects_Admin {
 
 
 	/**
-	 * @var Arondale_projects_Settings_API
+	 * @var Portfolio_arondale_Settings_API
 	 */
 	private $settings_api;
 
@@ -67,7 +67,7 @@ class Arondale_Projects_Admin {
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
 
-		$this->settings_api = new Arondale_projects_Settings_API($plugin_name, $version);
+		$this->settings_api = new Portfolio_arondale_Settings_API($plugin_name, $version);
 		$this->plugin_base_file = plugin_basename(plugin_dir_path(__FILE__).'../' . $this->plugin_name . '.php');
 
 	}
@@ -584,7 +584,7 @@ class Arondale_Projects_Admin {
 		global $wpdb;
 		$plugin_data = get_plugin_data(plugin_dir_path(__DIR__) . '/../' . $this->plugin_base_file);
 
-		include('partials/arondale-projects-admin-display.php');
+		include('partials/portfolio-arondale-admin-display.php');
 	}
 
 

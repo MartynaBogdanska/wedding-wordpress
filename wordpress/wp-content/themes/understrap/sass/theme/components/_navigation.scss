@@ -50,38 +50,6 @@ Fixed navigation on scroll
     }
 }
 
-
-/**
-Adjusted H1 headings for fixed navigation
-
-
-h1:before {
-    display: block;
-    content: " ";
-    height: 70px;
-    margin-top: -70px;
-    visibility: hidden;
-
-    @include media-breakpoint-down(sm) {
-        height: 260px;
-        margin-top: -260px;
-    }
-}
-
-h1#first-heading:before {
-    display: block;
-    content: " ";
-    height: 160px;
-    margin-top: -160px;
-    visibility: hidden;
-
-    @include media-breakpoint-down(sm) {
-        height: 260px;
-        margin-top: -260px;
-    }
-}
-**/
-
 /**
 *** Adjusted sections for fixed navigation
 **/
