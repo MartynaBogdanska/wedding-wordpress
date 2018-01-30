@@ -1,0 +1,17 @@
+/*---------------------------------------------------------------------------*\
+    #COMPONENTS > #BUTTONS
+\*---------------------------------------------------------------------------*/
+
+button.btn {
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.btn-primary {
+    background-color: $color-primary;
+
+    &:hover {
+        background-color: darken($color-primary, 5%);
+    }
+}

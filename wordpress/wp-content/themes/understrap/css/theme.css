@@ -9574,13 +9574,19 @@ body {
 section#projects {
   background-color: #f8f8f8; }
 
-section#values {
+section #values {
   background-color: #007CC3;
   color: #ffffff;
   padding: 40px 0; }
 
-section#culture {
-  padding: 40px 0; }
+section #culture {
+  padding-top: 40px; }
+
+section#careers i {
+  color: #007CC3; }
+
+section#offer {
+  background-color: #f8f8f8; }
 
 /*---------------------------------------------------------------------------*    #BASE > #TYPE
 \*---------------------------------------------------------------------------*/
@@ -9601,13 +9607,26 @@ h2 {
   text-align: center; }
 
 p {
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-weight: 200; }
 
 .font-serif {
   font-family: "Libre Baskerville", serif; }
 
 .font-sans-serif {
   font-family: "Raleway", "Arial", sans-serif; }
+
+/*---------------------------------------------------------------------------*    #COMPONENTS > #BUTTONS
+\*---------------------------------------------------------------------------*/
+button.btn {
+  border: none;
+  border-radius: 50px;
+  padding: 15px; }
+
+.btn-primary {
+  background-color: #007CC3; }
+  .btn-primary:hover {
+    background-color: #006caa; }
 
 /*---------------------------------------------------------------------------*    #COMPONENTS > #NAVIGATION
 \*---------------------------------------------------------------------------*/
@@ -9649,17 +9668,11 @@ Fixed navigation on scroll
 /**
 *** Adjusted sections for fixed navigation
 **/
-#about,
-#projects,
-#careers,
-#contact {
+section {
   padding: 60px 0;
   margin-top: -40px; }
   @media (max-width: 767.99px) {
-    #about,
-    #projects,
-    #careers,
-    #contact {
+    section {
       padding: 85px 0;
       margin-top: -80px; } }
 

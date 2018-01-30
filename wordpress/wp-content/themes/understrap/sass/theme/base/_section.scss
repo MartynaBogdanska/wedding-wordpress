@@ -6,12 +6,22 @@ section#projects {
     background-color: $color-gray-light;
 }
 
-section#values {
+section #values {
     background-color: $color-primary;
     color: $color-white;
     padding: 40px 0;
 }
 
-section#culture {
-    padding: 40px 0;
+section #culture {
+    padding-top: 40px;
+}
+
+section#careers {
+    i {
+        color: $color-primary;
+    }
+}
+
+section#offer {
+    background-color: $color-gray-light;
 }
