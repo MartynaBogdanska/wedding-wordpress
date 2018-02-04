@@ -14,7 +14,7 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Raleway:400,700");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9565,7 +9565,7 @@ a.skip-link {
 \*---------------------------------------------------------------------------*/
 body {
   position: relative;
-  font-family: 'Raleway', 'Arial', sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   line-height: 1.5;
   color: #585858; }
 
@@ -9587,6 +9587,9 @@ section#careers i {
 
 section#offer {
   background-color: #f8f8f8; }
+
+section#contact #wpgmza_map {
+  min-height: 500px; }
 
 /*---------------------------------------------------------------------------*    #BASE > #TYPE
 \*---------------------------------------------------------------------------*/
@@ -9627,6 +9630,47 @@ button.btn {
   background-color: #007CC3; }
   .btn-primary:hover {
     background-color: #006caa; }
+
+#nf-field-8 {
+  border: none;
+  border-radius: 50px;
+  padding: 15px;
+  background-color: #007CC3;
+  color: #ffffff;
+  float: right; }
+  #nf-field-8:hover {
+    background-color: #006caa; }
+  #nf-field-8::before {
+    content: "Close";
+    display: block;
+    color: black; }
+
+/*---------------------------------------------------------------------------*    #COMPONENTS > #MODALS
+\*---------------------------------------------------------------------------*/
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 600px; } }
+
+/**
+*** Bootstrap overwrites
+**/
+.modal-header .close {
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 300; }
+
+.modal-footer {
+  border-top: none;
+  margin-top: -110px;
+  margin-right: 90px;
+  z-index: 100; }
+
+/**
+*** Ninja Form overwrites
+**/
+.nf-after-form-content {
+  display: none; }
 
 /*---------------------------------------------------------------------------*    #COMPONENTS > #NAVIGATION
 \*---------------------------------------------------------------------------*/
@@ -9728,6 +9772,11 @@ section {
 #lgx-portfolio .lgx-item-card .lgx-item-info .lgx-item-intro span.text.location-text {
   margin: 10px 0;
   font-size: 14px; }
+
+/*---------------------------------------------------------------------------*    #COMPONENTS > #UTILITIES
+\*---------------------------------------------------------------------------*/
+.color-primary {
+  color: #007CC3; }
 
 /*
 * Use existing Bootstrap 4 classes and

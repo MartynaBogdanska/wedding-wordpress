@@ -1,0 +1,36 @@
+/*---------------------------------------------------------------------------*\
+    #COMPONENTS > #MODALS
+\*---------------------------------------------------------------------------*/
+
+.modal-dialog {
+
+    @include media-breakpoint-up(sm) {
+        max-width: 600px;
+    }
+}
+
+/**
+*** Bootstrap overwrites
+**/
+
+.modal-header .close {
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.modal-footer {
+    border-top: none;
+    margin-top: -110px;
+    margin-right: 90px;
+    z-index: 100;
+}
+
+/**
+*** Ninja Form overwrites
+**/
+
+.nf-after-form-content {
+    display: none;
+}
