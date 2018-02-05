@@ -2,6 +2,37 @@
     #BASE > #SECTION
 \*---------------------------------------------------------------------------*/
 
+section {
+    padding: 60px 0;
+    margin-top: -40px;
+
+    @include media-breakpoint-down(sm) {
+        padding: 85px 0;
+        margin-top: -80px;
+    }
+}
+
+section#home{
+	background: url('/wp-content/uploads/2017/12/arondale-background-image-e1513683582269.jpg') no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	min-height: 400px;
+	color: white;
+	margin-top: -7rem;
+
+    h1 {
+        color: $color-white;
+        text-transform: lowercase;
+        margin-bottom: 20px;
+    }
+
+    #banner-text {
+        padding: 150px 0 50px 0;
+    }
+}
+
 section#projects {
     background-color: $color-gray-light;
 }

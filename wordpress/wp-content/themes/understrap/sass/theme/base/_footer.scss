@@ -1,0 +1,31 @@
+/*---------------------------------------------------------------------------*\
+    #BASE > #FOOTER
+\*---------------------------------------------------------------------------*/
+
+#wrapper-footer {
+    background-color: $color-gray-dark;
+    color: $color-white;
+
+    &.wrapper {
+        padding-bottom: 0;
+    }
+
+    .row {
+        margin-bottom: 15px;
+
+        a {
+            color: $color-white;
+        }
+
+        h5 {
+            margin: 20px 0;
+        }
+
+    }
+
+    .site-rights {
+        padding: 10px 0;
+        background-color: $color-primary;
+        color: $color-white;
+    }
+}

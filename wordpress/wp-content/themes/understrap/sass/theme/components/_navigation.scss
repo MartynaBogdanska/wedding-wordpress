@@ -2,6 +2,10 @@
     #COMPONENTS > #NAVIGATION
 \*---------------------------------------------------------------------------*/
 
+.bg-light {
+    opacity: 0.9;
+}
+
 a.navbar-brand {
     max-width: 55px;
 }
@@ -9,7 +13,16 @@ a.navbar-brand {
 #navbarNavDropdown {
   li a {
       color: $color-primary;
+      text-transform: uppercase;
   }
+}
+
+.navbar-collapse {
+    flex-direction: row-reverse;
+}
+
+li.menu-item {
+    margin-left: 10px;
 }
 
 /**
@@ -24,13 +37,13 @@ Fixed navigation on scroll
 .scrolled {
     position: fixed;
     width:100%;
-    box-shadow: 0px 0px 5px #384047;
+    box-shadow: 0px 0px 5px $color-gray-dark;
     top: 0px;
     transition: all .5s ease;
     animation: smoothScroll .5s forwards;
     z-index: 100;
 
-    &.bg-dark {
+    &.bg-light {
         opacity: 0.85;
         height: 60px;
         transition: all .5s ease;
@@ -47,20 +60,5 @@ Fixed navigation on scroll
     }
     100% {
         transform: translateY(0px);
-    }
-}
-
-/**
-*** Adjusted sections for fixed navigation
-**/
-
-
-section {
-    padding: 60px 0;
-    margin-top: -40px;
-
-    @include media-breakpoint-down(sm) {
-        padding: 85px 0;
-        margin-top: -80px;
     }
 }

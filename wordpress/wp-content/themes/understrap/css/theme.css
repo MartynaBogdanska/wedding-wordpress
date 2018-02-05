@@ -9569,8 +9569,50 @@ body {
   line-height: 1.5;
   color: #585858; }
 
+/*---------------------------------------------------------------------------*    #BASE > #FOOTER
+\*---------------------------------------------------------------------------*/
+#wrapper-footer {
+  background-color: #585858;
+  color: #ffffff; }
+  #wrapper-footer.wrapper {
+    padding-bottom: 0; }
+  #wrapper-footer .row {
+    margin-bottom: 15px; }
+    #wrapper-footer .row a {
+      color: #ffffff; }
+    #wrapper-footer .row h5 {
+      margin: 20px 0; }
+  #wrapper-footer .site-rights {
+    padding: 10px 0;
+    background-color: #007CC3;
+    color: #ffffff; }
+
 /*---------------------------------------------------------------------------*    #BASE > #SECTION
 \*---------------------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  margin-top: -40px; }
+  @media (max-width: 767.99px) {
+    section {
+      padding: 85px 0;
+      margin-top: -80px; } }
+
+section#home {
+  background: url("/wp-content/uploads/2017/12/arondale-background-image-e1513683582269.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 400px;
+  color: white;
+  margin-top: -7rem; }
+  section#home h1 {
+    color: #ffffff;
+    text-transform: lowercase;
+    margin-bottom: 20px; }
+  section#home #banner-text {
+    padding: 150px 0 50px 0; }
+
 section#projects {
   background-color: #f8f8f8; }
 
@@ -9621,20 +9663,29 @@ p {
 
 /*---------------------------------------------------------------------------*    #COMPONENTS > #BUTTONS
 \*---------------------------------------------------------------------------*/
-button.btn {
-  border: none;
+.btn, .wpcf7 input[type=submit] {
   border-radius: 50px;
-  padding: 15px; }
+  padding: 10px 15px;
+  min-width: 110px; }
 
 .btn-primary {
-  background-color: #007CC3; }
+  background-color: #007CC3;
+  border: 2px solid #007CC3; }
   .btn-primary:hover {
     background-color: #006caa; }
 
+.btn-border-white {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff; }
+  .btn-border-white:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff; }
+
 #nf-field-8 {
-  border: none;
   border-radius: 50px;
-  padding: 15px;
+  min-width: 50px;
+  padding: 10px 15px;
   background-color: #007CC3;
   color: #ffffff;
   float: right; }
@@ -9662,7 +9713,7 @@ button.btn {
 
 .modal-footer {
   border-top: none;
-  margin-top: -110px;
+  margin-top: -105px;
   margin-right: 90px;
   z-index: 100; }
 
@@ -9674,11 +9725,21 @@ button.btn {
 
 /*---------------------------------------------------------------------------*    #COMPONENTS > #NAVIGATION
 \*---------------------------------------------------------------------------*/
+.bg-light {
+  opacity: 0.9; }
+
 a.navbar-brand {
   max-width: 55px; }
 
 #navbarNavDropdown li a {
-  color: #007CC3; }
+  color: #007CC3;
+  text-transform: uppercase; }
+
+.navbar-collapse {
+  flex-direction: row-reverse; }
+
+li.menu-item {
+  margin-left: 10px; }
 
 /**
 Fixed navigation on scroll
@@ -9690,17 +9751,17 @@ Fixed navigation on scroll
 .scrolled {
   position: fixed;
   width: 100%;
-  box-shadow: 0px 0px 5px #384047;
+  box-shadow: 0px 0px 5px #585858;
   top: 0px;
   transition: all .5s ease;
   animation: smoothScroll .5s forwards;
   z-index: 100; }
-  .scrolled.bg-dark {
+  .scrolled.bg-light {
     opacity: 0.85;
     height: 60px;
     transition: all .5s ease; }
     @media (max-width: 767.99px) {
-      .scrolled.bg-dark {
+      .scrolled.bg-light {
         height: auto; } }
 
 @keyframes smoothScroll {
@@ -9708,17 +9769,6 @@ Fixed navigation on scroll
     transform: translateY(-200px); }
   100% {
     transform: translateY(0px); } }
-
-/**
-*** Adjusted sections for fixed navigation
-**/
-section {
-  padding: 60px 0;
-  margin-top: -40px; }
-  @media (max-width: 767.99px) {
-    section {
-      padding: 85px 0;
-      margin-top: -80px; } }
 
 /*---------------------------------------------------------------------------*    #COMPONENTS > #PROJECTS
 \*---------------------------------------------------------------------------*/
