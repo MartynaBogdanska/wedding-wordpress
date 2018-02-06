@@ -1,11 +1,9 @@
 /*---------------------------------------------------------------------------*\
-    #BASE > #BODY
+    #COMPONENTS > #HEADER
 \*---------------------------------------------------------------------------*/
 
-body {
-    position: relative;
+#content header.entry-header h1 {
     font-family: $font-sans-serif;
-    line-height: $line-height-base;
-    background-color: $color-gray-light;
-    color: $color-gray-dark;
+    text-align: left;
+    color: $color-primary;
 }

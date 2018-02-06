@@ -28,11 +28,17 @@
     }
 }
 
+.btn-default {
+    background-color: transparent;
+    color: $color-black;
+}
+
 
 #nf-field-8 {
     border-radius: 50px;
-    min-width: 50px;
+    border: none;
     padding: 10px 15px;
+    min-width: 110px;
     background-color: $color-primary;
     color: $color-white;
     float: right;

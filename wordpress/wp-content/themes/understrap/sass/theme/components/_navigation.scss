@@ -2,18 +2,29 @@
     #COMPONENTS > #NAVIGATION
 \*---------------------------------------------------------------------------*/
 
+.navbar {
+    padding: 0 1rem;
+}
+
 .bg-light {
+    background-color: $color-white !important;
     opacity: 0.9;
 }
 
 a.navbar-brand {
-    max-width: 55px;
+    max-width: 70px;
 }
 
 #navbarNavDropdown {
   li a {
+      font-size: 1.2rem;
       color: $color-primary;
       text-transform: uppercase;
+  }
+
+  .navbar-nav {
+      float: right;
+      text-align: right;
   }
 }
 
@@ -45,12 +56,16 @@ Fixed navigation on scroll
 
     &.bg-light {
         opacity: 0.85;
-        height: 60px;
+        height: 70px;
         transition: all .5s ease;
 
         @include media-breakpoint-down(sm) {
             height: auto;
         }
+    }
+
+    & a.navbar-brand {
+        max-width: 55px;
     }
 }
 

@@ -5,10 +5,14 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Raleway:400,700');
 
 h1 {
-    font-family: $font-serif;
     font-size: $font-size-h1;
     color: $color-primary;
-    margin-bottom: 40px;
+    padding: 30px 0 30px 0;
+}
+
+#homepage h1 {
+    font-family: $font-serif;
+    padding: 0 0 20px 0;
     text-align: center;
     text-transform: uppercase;
 }
@@ -19,13 +23,43 @@ h1.reverse {
 
 h2 {
     font-size: $font-size-h2;
-    margin-bottom: 25px;
-    text-align: center;
+    padding: 25px 0;
 }
 
-p {
+#homepage h2 {
+    text-align: center;
+    padding: 0;
+}
+
+h3 {
+    font-size: $font-size-h3;
+    font-weight: bolder;
+    padding: 20px 0;
+}
+
+h4 {
+    font-size: $font-size-h4;
+    font-weight: bolder;
+    padding: 10px 0;
+}
+
+h5 {
+    font-size: $font-size-h5;
+    font-weight: bolder;
+    padding: 5px 0;
+}
+
+h6 {
+    font-size: $font-size-h6;
+    font-weight: bolder;
+    padding: 5px 0;
+}
+
+p,
+p.paragraph {
     font-size: $font-size;
     font-weight: $font-weight-light;
+    margin-bottom: 20px;
 }
 
 .font-serif {
