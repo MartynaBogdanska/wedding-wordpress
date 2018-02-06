@@ -3,13 +3,8 @@
 \*---------------------------------------------------------------------------*/
 
 section {
-    padding: 60px 0;
-    margin-top: -40px;
-
-    @include media-breakpoint-down(sm) {
-        padding: 85px 0;
-        margin-top: -80px;
-    }
+    padding-top: 65px;
+    margin-top: -20px;
 }
 
 section#home{

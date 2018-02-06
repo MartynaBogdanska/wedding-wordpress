@@ -9591,12 +9591,8 @@ body {
 /*---------------------------------------------------------------------------*    #BASE > #SECTION
 \*---------------------------------------------------------------------------*/
 section {
-  padding: 60px 0;
-  margin-top: -40px; }
-  @media (max-width: 767.99px) {
-    section {
-      padding: 85px 0;
-      margin-top: -80px; } }
+  padding-top: 65px;
+  margin-top: -20px; }
 
 section#home {
   background: url("/wp-content/uploads/2017/12/arondale-background-image-e1513683582269.jpg") no-repeat center center fixed;
