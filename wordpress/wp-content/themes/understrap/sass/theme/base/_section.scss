@@ -51,14 +51,26 @@ section #values {
 
     div:nth-child(1) {
         text-align: left;
+
+        @include media-breakpoint-down(sm) {
+            text-align: center;
+        }
     }
 
     div:nth-child(2) {
         text-align: center;
+
+        @include media-breakpoint-down(sm) {
+            text-align: center;
+        }
     }
 
     div:nth-child(3) {
         text-align: right;
+
+        @include media-breakpoint-down(sm) {
+            text-align: center;
+        }
     }
 }
 
