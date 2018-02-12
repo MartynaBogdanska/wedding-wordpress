@@ -4,11 +4,12 @@
 
 section {
     padding-top: 65px;
-    margin-top: -20px;
+    padding-bottom: 50px;
+    margin-top: -26px;
 }
 
 section#home{
-	background: url('/wp-content/uploads/2017/12/arondale-background-image-e1513683582269.jpg') no-repeat center center fixed;
+	background: url('/wp-content/uploads/2018/02/arondale-background-image.jpeg') no-repeat center center fixed;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -17,14 +18,19 @@ section#home{
 	color: white;
 	margin-top: -7rem;
 
-    h1 {
-        color: $color-white;
-        text-transform: lowercase;
-        margin-bottom: 20px;
-    }
-
     #banner-text {
-        padding: 150px 0 50px 0;
+        padding: 200px 0 100px 0;
+
+        h1 {
+            color: $color-white;
+            text-transform: lowercase;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px $color-gray-dark;
+        }
+
+        h2 {
+            text-shadow: 2px 2px 4px $color-gray-dark;
+        }
     }
 }
 
@@ -34,17 +40,31 @@ section#about {
 
 section#projects {
     background-color: $color-gray-light;
+    margin-top: -75px;
 }
 
 section #values {
     background-color: $color-primary;
     color: $color-white;
     padding: 40px 0;
+    margin-top: -65px;
+
+    div:nth-child(1) {
+        text-align: left;
+    }
+
+    div:nth-child(2) {
+        text-align: center;
+    }
+
+    div:nth-child(3) {
+        text-align: right;
+    }
 }
 
 section #culture {
-    padding-top: 40px;
     background-color: $color-white;
+    padding: 40px 0 20px 0;
 }
 
 section#careers {

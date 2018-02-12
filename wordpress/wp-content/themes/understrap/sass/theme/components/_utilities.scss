@@ -5,3 +5,16 @@
 .color-primary {
     color: $color-primary;
 }
+
+.container-50 {
+    width: 50%;
+    margin: 0 auto;
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+
+        div {
+            text-align: center !important;
+        }
+    }
+}

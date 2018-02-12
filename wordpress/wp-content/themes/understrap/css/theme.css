@@ -9592,10 +9592,11 @@ body {
 \*---------------------------------------------------------------------------*/
 section {
   padding-top: 65px;
-  margin-top: -20px; }
+  padding-bottom: 50px;
+  margin-top: -26px; }
 
 section#home {
-  background: url("/wp-content/uploads/2017/12/arondale-background-image-e1513683582269.jpg") no-repeat center center fixed;
+  background: url("/wp-content/uploads/2018/02/arondale-background-image.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9603,27 +9604,38 @@ section#home {
   min-height: 400px;
   color: white;
   margin-top: -7rem; }
-  section#home h1 {
-    color: #ffffff;
-    text-transform: lowercase;
-    margin-bottom: 20px; }
   section#home #banner-text {
-    padding: 150px 0 50px 0; }
+    padding: 200px 0 100px 0; }
+    section#home #banner-text h1 {
+      color: #ffffff;
+      text-transform: lowercase;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #585858; }
+    section#home #banner-text h2 {
+      text-shadow: 2px 2px 4px #585858; }
 
 section#about {
   background-color: #ffffff; }
 
 section#projects {
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  margin-top: -75px; }
 
 section #values {
   background-color: #007CC3;
   color: #ffffff;
-  padding: 40px 0; }
+  padding: 40px 0;
+  margin-top: -65px; }
+  section #values div:nth-child(1) {
+    text-align: left; }
+  section #values div:nth-child(2) {
+    text-align: center; }
+  section #values div:nth-child(3) {
+    text-align: right; }
 
 section #culture {
-  padding-top: 40px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  padding: 40px 0 20px 0; }
 
 section#careers {
   background-color: #ffffff; }
@@ -9698,8 +9710,8 @@ p.paragraph {
 \*---------------------------------------------------------------------------*/
 .btn, .wpcf7 input[type=submit] {
   border-radius: 50px;
-  padding: 10px 15px;
-  min-width: 110px; }
+  padding: 15px 20px;
+  min-width: 130px; }
 
 .btn-primary {
   background-color: #007CC3;
@@ -9722,8 +9734,8 @@ p.paragraph {
 #nf-field-8 {
   border-radius: 50px;
   border: none;
-  padding: 10px 15px;
-  min-width: 110px;
+  padding: 15px 20px;
+  min-width: 130px;
   background-color: #007CC3;
   color: #ffffff;
   float: right; }
@@ -9758,8 +9770,8 @@ p.paragraph {
 
 .modal-footer {
   border-top: none;
-  margin-top: -100px;
-  margin-right: 100px;
+  margin-top: -110px;
+  margin-right: 110px;
   z-index: 100; }
 
 /**
@@ -9883,6 +9895,15 @@ Fixed navigation on scroll
 \*---------------------------------------------------------------------------*/
 .color-primary {
   color: #007CC3; }
+
+.container-50 {
+  width: 50%;
+  margin: 0 auto; }
+  @media (max-width: 767.99px) {
+    .container-50 {
+      width: 100%; }
+      .container-50 div {
+        text-align: center !important; } }
 
 /*
 * Use existing Bootstrap 4 classes and
