@@ -6,7 +6,7 @@
 /**
  * Based on a modular scale where:
  * Base = 1rem
- * Ratio = 1.618
+ * Ratio = 1.5
  */
 /*!
  * Bootstrap v4.0.0-beta.3 (https://getbootstrap.com)
@@ -9596,7 +9596,7 @@ section {
   margin-top: -26px; }
 
 section#home {
-  background: url("/wp-content/uploads/2018/02/arondale-background-image.jpeg") no-repeat center center fixed;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("/wp-content/uploads/2018/02/arondale-background-image.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9605,14 +9605,11 @@ section#home {
   color: white;
   margin-top: -7rem; }
   section#home #banner-text {
-    padding: 200px 0 100px 0; }
+    padding: 150px 0 30px 0; }
     section#home #banner-text h1 {
       color: #ffffff;
       text-transform: lowercase;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px #585858; }
-    section#home #banner-text h2 {
-      text-shadow: 2px 2px 4px #585858; }
+      margin-bottom: 20px; }
 
 section#about {
   background-color: #ffffff; }
@@ -9662,7 +9659,7 @@ section#contact {
 /*---------------------------------------------------------------------------*    #BASE > #TYPE
 \*---------------------------------------------------------------------------*/
 h1 {
-  font-size: 2.427rem;
+  font-size: 2.25rem;
   color: #007CC3;
   padding: 30px 0 30px 0; }
 
@@ -9676,7 +9673,7 @@ h1.reverse {
   color: #ffffff; }
 
 h2 {
-  font-size: 1.618rem;
+  font-size: 1.5rem;
   padding: 25px 0; }
 
 #homepage h2 {
@@ -9684,12 +9681,12 @@ h2 {
   padding: 0; }
 
 h3 {
-  font-size: 1.2944rem;
+  font-size: 1.2rem;
   font-weight: bolder;
   padding: 20px 0; }
 
 h4 {
-  font-size: 0.6472rem;
+  font-size: 0.6rem;
   font-weight: bolder;
   padding: 10px 0; }
 
@@ -9699,7 +9696,7 @@ h5 {
   padding: 5px 0; }
 
 h6 {
-  font-size: 0.61805rem;
+  font-size: 0.66667rem;
   font-weight: bolder;
   padding: 5px 0; }
 
@@ -9795,14 +9792,13 @@ p.paragraph {
   padding: 0 1rem; }
 
 .bg-light {
-  background-color: #ffffff !important;
-  opacity: 0.9; }
+  background: rgba(255, 255, 255, 0.8) !important; }
 
 a.navbar-brand {
-  max-width: 70px; }
+  max-width: 60px; }
 
 #navbarNavDropdown li a {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #007CC3;
   text-transform: uppercase; }
 
@@ -9854,7 +9850,7 @@ Fixed navigation on scroll
   display: none; }
 
 #lgx-portfolio .lgx-item-card {
-  min-height: 515px;
+  min-height: 539px;
   box-shadow: none; }
   @media (max-width: 767.99px) {
     #lgx-portfolio .lgx-item-card {

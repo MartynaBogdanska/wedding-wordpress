@@ -7,17 +7,16 @@
 }
 
 .bg-light {
-    background-color: $color-white !important;
-    opacity: 0.9;
+    background: rgba(255, 255, 255, .8) !important;
 }
 
 a.navbar-brand {
-    max-width: 70px;
+    max-width: 60px;
 }
 
 #navbarNavDropdown {
   li a {
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: $color-primary;
       text-transform: uppercase;
   }

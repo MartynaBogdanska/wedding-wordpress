@@ -8,16 +8,16 @@ $font-sans-serif: 'Raleway', 'Arial', sans-serif;
 /**
  * Based on a modular scale where:
  * Base = 1rem
- * Ratio = 1.618
+ * Ratio = 1.5
  */
 
-$font-size-xs: 1rem/1.618*1.5;
-$font-size-s: 1rem/1.618;
+$font-size-xs: 1rem/1.5*1.5;
+$font-size-s: 1rem/1.5;
 $font-size-m: 1rem;
-$font-size-l: 1rem*1.618*0.4;
-$font-size-xl: 1rem*1.618*0.8;
-$font-size-xxl: 1rem*1.618;
-$font-size-xxxl: 1rem*1.618*1.5;
+$font-size-l: 1rem*1.5*0.4;
+$font-size-xl: 1rem*1.5*0.8;
+$font-size-xxl: 1rem*1.5;
+$font-size-xxxl: 1rem*1.5*1.5;
 
 
 $font-size-h1: $font-size-xxxl;
