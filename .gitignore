@@ -44,15 +44,11 @@
 /wordpress/wp-content/themes/understrap/css/
 
 # Exclude WordPress plugins
-/wordpress/wp-content/plugins/all-in-one-wp-security-and-firewall
-/wordpress/wp-content/plugins/dont-muck-my-markup
-/wordpress/wp-content/plugins/html-editor-syntax-highlighter
-/wordpress/wp-content/plugins/insert-pages
-/wordpress/wp-content/plugins/ninja-forms
 /wordpress/wp-content/plugins/updraftplus
 /wordpress/wp-content/updraft/
 /wordpress/wp-content/plugins/portfolio-pro
 /wordpress/wp-content/plugins/arondale-projects
+/wordpress/wp-snapshots
 
 # Exclude files containing sensitive information.
 /wordpress/wp-config.php
