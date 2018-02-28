@@ -27,7 +27,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="row">
   							<div class="col-md-6">
 								<h5>ABOUT</h5>
-								<p class="small">Arondale is a Queensland privately-owned commercial construction company founded in 1989 by Darryl Standfield. We focus on four key verticals: Medical, Education, Retail and Aged Care/Retirement.</p>
+								<p class="small">Arondale is a Queensland privately-owned commercial construction company founded in 1989 by Darryl Standfield. We focus on four key verticals: Medical, Education, Shopping Centres and Aged Care/Retirement.</p>
 								<p class="small">We pride ourselves on delivering complicated projects for our clients on-time, within budget and to a very high level of finish.</p>
 							</div>
 							<div class="col-md-3">
