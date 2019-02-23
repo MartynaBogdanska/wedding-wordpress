@@ -1,23 +1,24 @@
 === HTML Editor Syntax Highlighter ===
 Contributors: nixdns, arniebradfo, rraub, collinprice
 Donate link: https://www.paypal.me/mukhortov/5
-Tags: syntax highlighter, codemirror, text editor, code highlighter, code coloring, editor, html editor, theme editor, plugin editor, syntax, highlighting, highlighter, syntax highlighting, codemirror.js, code,
+Tags: syntax highlighter, codemirror, text editor, code highlighter, code coloring, editor, html editor, gutenberg, code editor, theme editor, plugin editor, syntax, highlighting, highlighter, syntax highlighting, codemirror.js, code, 
 Requires at least: 4.0.15
-Tested up to: 4.9.1
-Stable tag: 2.2.3
+Tested up to: 5.0.3
+Stable tag: 2.3.1
 License: GPL-2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add syntax highlighting to the all WordPress code editors using Codemirror.js
+Add syntax highlighting to WordPress code editors using CodeMirror.js
 
 == Description ==
 
-Add syntax highlighting in the WordPress Post & Page HTML text editor and the Theme & Plugin editors using Codemirror.js
+Add syntax highlighting in the Classic Post & Page HTML text editor, Gutenberg Code Editor, and Theme & Plugin editors using CodeMirror.js
 
 = Features =
 
 * Syntax highlighting in the Post/Page HTML editor
-* _NEW:_ Syntax highlighting in the Theme & Plugin editors
+* _NEW:_ Syntax highlighting in the Gutenberg Code Editor
+* Syntax highlighting in the Theme & Plugin editors
 * Syntax highlighting for WordPress shortcodes
 * Save your posts and pages pressing `Ctrl+S` (`Cmd+S` on Mac)
 * Restore cursor position after page is reloaded
@@ -28,6 +29,12 @@ If you would like to contribute to this plugin, view the [github repo](https://g
 
 == Frequently Asked Questions ==
 
+= Does it work with Gutenberg? =
+Yes! Since version 2.3.0, it works with the Gutenberg Code Editor. It may work with other code related parts in the future. [Track the progress here.](https://github.com/mukhortov/HESH-WordPress-Plugin/issues/72)
+
+= I want the Classic Editor Back =
+Since WordPress version 5.0, Gutenberg is the default editor. If you want this plugin to work the way it used to, you'll have to download the [Classic Editor plugin](https://wordpress.org/plugins/classic-editor/).
+
 = Does it work with Internet Explorer? =
 Not really... It is partially supported in IE 11. Known bugs are tracked [here](https://github.com/mukhortov/HESH-WordPress-Plugin/issues/41), but won't be fixed. Anything less that IE 10 isn't even supported by Microsoft anymore. If you are using Internet Explorer you should get a [better browser](https://www.mozilla.org/en-US/firefox/new/).
 
@@ -37,9 +44,34 @@ The fullscreen button on the top right of the editor will do one of two things d
 * Off: Toggles the "fullscreen mode".
 
 = Can I search? =
-Yes! Seach with `Ctrl+F` (`Cmd+F` on Mac). Replace with `Ctrl+alt+F` (`Cmd+alt+F` on Mac).
+Yes! Search with `Ctrl+F` (`Cmd+F` on Mac). Replace with `Ctrl+alt+F` (`Cmd+alt+F` on Mac).
 
 == Changelog ==
+
+= 2.3.1 =
+* Fixing JS error in issue #81 _(Hopefully?)_
+* Updating authorship so James can get a job. Will revert to Petr Later...
+
+= 2.3.0 =
+* Support for Gutenberg Code Editor!
+* Added new themes: Codepen and Wordpress (which is now the default).
+* Created new screenshots for the plugin page.
+* New Logo based on `<W/>`.
+* Updated FAQ with Gutenberg info.
+* Changed build steps to only export one `.css` and `.js` file
+
+= 2.3.0 =
+* added Gutenberg information after the update to WordPress version 5.0
+
+= 2.2.5 =
+* fixed bug: #75 removing `f` typo
+
+= 2.2.4 =
+* fixed bug: Allow Multiple Instances of CodeMirror on a page #71
+* fixed bug: js error when custom post type does not support 'editor' feature #62
+
+= 2.2.3 =
+* A patch for WP 4.9. No more double editors in theme/plugin editors.
 
 = 2.2.2 =
 * fixed bug: github updater in production issue #52
@@ -50,7 +82,7 @@ Yes! Seach with `Ctrl+F` (`Cmd+F` on Mac). Replace with `Ctrl+alt+F` (`Cmd+alt+F
 
 = 2.2.0 = 
 * added search & replace with dialog
-* added highlighing options
+* added highlighting options
 * added auto-close tags and brackets option
 * added code-folding option
 * added scrollbars option
@@ -94,7 +126,7 @@ Yes! Seach with `Ctrl+F` (`Cmd+F` on Mac). Replace with `Ctrl+alt+F` (`Cmd+alt+F
 * Ctrl-S / Cmd-S saving will now select "Save Draft" if the post has not been published yet
 * Switched to an [npm](https://www.npmjs.com/) and [grunt.js](http://gruntjs.com/) based build so new versions of CodeMirror can be applied easier
 * Updated CodeMirror to its latest version
-* Fixed FireFox bug: `<select>` dropdown would not display due to `::active` state `transform` property
+* Fixed FireFox bug: `<select>` drop-down would not display due to `::active` state `transform` property
 * Fixed bug: toolbar covering text at small screen width
 * Fixed bug: `switchEditors is undefined`
 * Updated Css for wp 4.5
@@ -207,6 +239,9 @@ Initial release.
 
 
 == Screenshots ==
-1. Syntax highlighting in the Post/Page HTML editor.
-2. Settings Panel.
-3. Syntax highlighting in the Theme/Plugin editor.
+1. Syntax highlighting in the Classic Post/Page HTML editor.
+2. Quick Settings Panel.
+3. Advanced Settings Panel.
+4. Syntax highlighting in the Theme/Plugin editor.
+5. Syntax highlighting in the Gutenberg Code Editor.
+6. Example code highlighting.

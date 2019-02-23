@@ -14,7 +14,7 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Raleway:400,700");
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans:300,400");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9565,7 +9565,8 @@ a.skip-link {
 \*---------------------------------------------------------------------------*/
 body {
   position: relative;
-  font-family: "Raleway", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 200;
   line-height: 1.5;
   background-color: #f8f8f8;
   color: #585858; }
@@ -9585,7 +9586,7 @@ body {
       margin: 20px 0; }
   #wrapper-footer .site-rights {
     padding: 10px 0;
-    background-color: #007CC3;
+    background-color: #a16d8b;
     color: #ffffff; }
 
 /*---------------------------------------------------------------------------*    #BASE > #SECTION
@@ -9638,7 +9639,7 @@ section#projects {
   margin-top: -75px; }
 
 section #values {
-  background-color: #007CC3;
+  background-color: #a16d8b;
   color: #ffffff;
   padding: 40px 0;
   margin-top: -65px; }
@@ -9665,7 +9666,7 @@ section #culture {
 section#careers {
   background-color: #ffffff; }
   section#careers i {
-    color: #007CC3; }
+    color: #a16d8b; }
 
 section#offer {
   background-color: #f8f8f8; }
@@ -9678,26 +9679,13 @@ section#contact {
 /*---------------------------------------------------------------------------*    #BASE > #TYPE
 \*---------------------------------------------------------------------------*/
 h1 {
-  font-size: 2.25rem;
-  color: #007CC3;
-  padding: 30px 0 30px 0; }
-
-#homepage h1 {
-  font-family: "Libre Baskerville", serif;
-  padding: 0 0 20px 0;
-  text-align: center;
-  text-transform: uppercase; }
-
-h1.reverse {
-  color: #ffffff; }
+  font-family: "Great Vibes", serif;
+  font-size: 3rem; }
 
 h2 {
-  font-size: 1.5rem;
+  font-family: "Great Vibes", serif;
+  font-size: 2.25rem;
   padding: 25px 0; }
-
-#homepage h2 {
-  text-align: center;
-  padding: 0; }
 
 h3 {
   font-size: 1.2rem;
@@ -9726,10 +9714,17 @@ p.paragraph {
   margin-bottom: 20px; }
 
 .font-serif {
-  font-family: "Libre Baskerville", serif; }
+  font-family: "Great Vibes", serif; }
 
 .font-sans-serif {
-  font-family: "Raleway", "Arial", sans-serif; }
+  font-family: "Open Sans", "Arial", sans-serif; }
+
+/*---------------------------------------------------------------------------*    #BASE > #WRAPPER
+\*---------------------------------------------------------------------------*/
+#content {
+  background-color: #ffffff;
+  padding: 2rem;
+  max-width: 600px; }
 
 /*---------------------------------------------------------------------------*    #COMPONENTS > #BUTTONS
 \*---------------------------------------------------------------------------*/
@@ -9739,10 +9734,10 @@ p.paragraph {
   min-width: 130px; }
 
 .btn-primary {
-  background-color: #007CC3;
-  border: 2px solid #007CC3; }
+  background-color: #a16d8b;
+  border: 2px solid #a16d8b; }
   .btn-primary:hover {
-    background-color: #006caa; }
+    background-color: #95607e; }
 
 .btn-border-white {
   background-color: transparent;
@@ -9756,16 +9751,35 @@ p.paragraph {
   background-color: transparent;
   color: #000000; }
 
+/*
+    Ninja Form fields
+*/
+.ninja-forms-field {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 100; }
+  .ninja-forms-field::placeholder {
+    color: gray; }
+
+.nf-field-element select {
+  border-radius: 0;
+  background-color: #ffffff;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 100; }
+
+.submit-container {
+  text-align: center; }
+
 #nf-field-8 {
-  border-radius: 50px;
+  border-radius: 0;
   border: none;
-  padding: 15px 20px;
-  min-width: 130px;
-  background-color: #007CC3;
-  color: #ffffff;
-  float: right; }
+  padding: 8px 10px;
+  min-width: 100px;
+  background-color: #a16d8b;
+  color: #ffffff; }
   #nf-field-8:hover {
-    background-color: #006caa; }
+    background-color: #95607e; }
   #nf-field-8::before {
     content: "Close";
     display: block;
@@ -9773,11 +9787,6 @@ p.paragraph {
 
 /*---------------------------------------------------------------------------*    #COMPONENTS > #HEADER
 \*---------------------------------------------------------------------------*/
-#content header.entry-header h1 {
-  font-family: "Raleway", "Arial", sans-serif;
-  text-align: left;
-  color: #007CC3; }
-
 /*---------------------------------------------------------------------------*    #COMPONENTS > #MODALS
 \*---------------------------------------------------------------------------*/
 @media (min-width: 576px) {
@@ -9808,17 +9817,17 @@ p.paragraph {
 /*---------------------------------------------------------------------------*    #COMPONENTS > #NAVIGATION
 \*---------------------------------------------------------------------------*/
 .navbar {
-  padding: 0 1rem; }
+  padding: 1rem; }
 
 .bg-light {
   background: rgba(255, 255, 255, 0.8) !important; }
 
 a.navbar-brand {
-  max-width: 60px; }
+  max-width: 200px; }
 
 #navbarNavDropdown li a {
   font-size: 1rem;
-  color: #007CC3;
+  color: #a16d8b;
   text-transform: uppercase; }
 
 #navbarNavDropdown .navbar-nav {
@@ -9894,7 +9903,7 @@ Fixed navigation on scroll
   margin: 5px 0;
   font-size: 18px;
   font-weight: 900;
-  color: #007CC3; }
+  color: #a16d8b; }
 
 #lgx-portfolio .lgx-item-card .lgx-item-info .lgx-item-intro {
   display: flex; }
@@ -9918,7 +9927,7 @@ Fixed navigation on scroll
 /*---------------------------------------------------------------------------*    #COMPONENTS > #UTILITIES
 \*---------------------------------------------------------------------------*/
 .color-primary {
-  color: #007CC3; }
+  color: #a16d8b; }
 
 .container-50 {
   width: 50%;

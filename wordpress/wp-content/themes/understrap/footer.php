@@ -58,7 +58,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="site-rights text-center">
 		<div class="container small">
-			© Valiant Interiors Pty Ltd (trading as Arondale Interiors) 2018
+			© Brysie się hajtają 2019
 		</div>
 	</div><!-- .site-rights -->
 

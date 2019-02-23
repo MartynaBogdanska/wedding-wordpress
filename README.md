@@ -1,2 +1,2 @@
-# arondale-wordpress
-WordPress website for Arondale - construction company
+# Wedding Webiste of Mr. & Mrs. Brys
+WordPress wedding website
