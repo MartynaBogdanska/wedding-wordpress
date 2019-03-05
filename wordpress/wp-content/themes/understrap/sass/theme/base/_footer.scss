@@ -7,7 +7,7 @@
     color: $color-white;
 
     &.wrapper {
-        padding-bottom: 0;
+        padding: 0;
     }
 
     .row {
@@ -25,7 +25,7 @@
 
     .site-rights {
         padding: 10px 0;
-        background-color: $color-primary;
+        background-color: darken($color-primary, 10%);
         color: $color-white;
     }
 }

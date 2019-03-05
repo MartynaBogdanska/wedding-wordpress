@@ -9577,7 +9577,7 @@ body {
   background-color: #585858;
   color: #ffffff; }
   #wrapper-footer.wrapper {
-    padding-bottom: 0; }
+    padding: 0; }
   #wrapper-footer .row {
     margin-bottom: 15px; }
     #wrapper-footer .row a {
@@ -9586,7 +9586,7 @@ body {
       margin: 20px 0; }
   #wrapper-footer .site-rights {
     padding: 10px 0;
-    background-color: #a16d8b;
+    background-color: #855671;
     color: #ffffff; }
 
 /*---------------------------------------------------------------------------*    #BASE > #SECTION
@@ -9823,7 +9823,7 @@ p.paragraph {
   background: rgba(255, 255, 255, 0.8) !important; }
 
 a.navbar-brand {
-  max-width: 200px; }
+  max-width: 300px; }
 
 #navbarNavDropdown li a {
   font-size: 1rem;
@@ -9863,7 +9863,7 @@ Fixed navigation on scroll
       .scrolled.bg-light {
         height: auto; } }
   .scrolled a.navbar-brand {
-    max-width: 55px; }
+    max-width: 200px; }
 
 @keyframes smoothScroll {
   0% {
