@@ -9719,6 +9719,14 @@ p.paragraph {
 .font-sans-serif {
   font-family: "Open Sans", "Arial", sans-serif; }
 
+a {
+  color: #ab7d97; }
+  a:visited {
+    color: #ab7d97; }
+  a:hover {
+    color: #bf9cb0 !important;
+    text-decoration: none !important; }
+
 /*---------------------------------------------------------------------------*    #BASE > #WRAPPER
 \*---------------------------------------------------------------------------*/
 #content {
@@ -9733,10 +9741,12 @@ p.paragraph {
   padding: 15px 20px;
   min-width: 130px; }
 
-.btn-primary {
+.btn-primary,
+#sb_instagram #sbi_load .sbi_load_btn {
   background-color: #a16d8b;
   border: 2px solid #a16d8b; }
-  .btn-primary:hover {
+  .btn-primary:hover,
+  #sb_instagram #sbi_load .sbi_load_btn:hover {
     background-color: #95607e; }
 
 .btn-border-white {

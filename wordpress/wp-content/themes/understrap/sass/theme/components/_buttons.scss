@@ -8,7 +8,8 @@
     min-width: 130px;
 }
 
-.btn-primary {
+.btn-primary,
+#sb_instagram #sbi_load .sbi_load_btn {
     background-color: $color-primary;
     border: 2px solid $color-primary;
 

@@ -54,3 +54,16 @@ p.paragraph {
 .font-sans-serif {
     font-family: $font-sans-serif;
 }
+
+a {
+    color: lighten($color-primary, 5%);
+
+    &:visited {
+        color: lighten($color-primary, 5%);
+    }
+
+    &:hover {
+        color: lighten($color-primary, 15%) !important;
+        text-decoration: none !important;
+    }
+}
