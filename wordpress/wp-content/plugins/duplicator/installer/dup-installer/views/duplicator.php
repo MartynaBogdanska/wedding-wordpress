@@ -96,9 +96,9 @@ $archive_config  = DUPX_ArchiveConfig::getInstance();
 
 <form id="s1-input-form" method="post" class="content-form">
 <input type="hidden" name="view" value="step1" />
-<input type="hidden" name="csrf_token" value="<?php echo DUPX_CSRF::generate('step1'); ?>"> 
+<input type="hidden" name="csrf_token" value="<?php echo DUPX_U::esc_attr(DUPX_CSRF::generate('step1')); ?>"> 
 <input type="hidden" name="ctrl_action" value="ctrl-step1" />
-<input type="hidden" name="ctrl_csrf_token" value="<?php echo DUPX_U::esc_attr(DUPX_CSRF::generate('ctrl-step1')); ?>"> 
+<input type="hidden" name="ctrl_csrf_token" value="<?php echo DUPX_CSRF::generate('ctrl-step1'); ?>"> 
 <input type="hidden" name="secure-pass" value="<?php echo DUPX_U::esc_html($_POST['secure-pass']); ?>" />
 <input type="hidden" name="bootloader" value="<?php echo DUPX_U::esc_attr($GLOBALS['BOOTLOADER_NAME']); ?>" />
 <input type="hidden" name="archive" value="<?php echo DUPX_U::esc_attr($GLOBALS['FW_PACKAGE_PATH']); ?>" />
@@ -464,7 +464,7 @@ VALIDATION
 			<b>Open BaseDir:</b> <i><?php echo $notice['50'] == 'Good' ? "<i class='dupx-pass'>Disabled</i>" : "<i class='dupx-fail'>Enabled</i>"; ?></i>
 			<br/><br/>
 
-			If <a href="http://php.net/manual/en/ini.core.php#ini.open-basedir" target="_blank">open_basedir</a> is enabled and your
+			If <a href="http://php.net/manual/en/ini.core.php#ini.open-basedir" target="_blank">open_basedir</a> is enabled and you're
 			having issues getting your site to install properly; please work with your host and follow these steps to prevent issues:
 			<ol style="margin:7px; line-height:19px">
 				<li>Disable the open_basedir setting in the php.ini file</li>

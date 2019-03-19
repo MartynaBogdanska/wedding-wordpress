@@ -12,6 +12,19 @@
 
 a.navbar-brand {
     max-width: 300px;
+
+    @include media-breakpoint-down(xs) {
+        max-width: 210px;
+    }
+
+}
+
+.navbar-toggler {
+    border-color: transparent !important;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 #navbarNavDropdown {
@@ -29,6 +42,11 @@ a.navbar-brand {
 
 .navbar-collapse {
     flex-direction: row-reverse;
+    padding-right: 13px;
+}
+
+#site-navbar {
+    z-index: 1;
 }
 
 li.menu-item {
@@ -47,7 +65,7 @@ Fixed navigation on scroll
 .scrolled {
     position: fixed;
     width:100%;
-    box-shadow: 0px 0px 5px $color-gray-dark;
+    box-shadow: 0 0 5px #58585845;
     top: 0px;
     transition: all .5s ease;
     animation: smoothScroll .5s forwards;
@@ -57,6 +75,7 @@ Fixed navigation on scroll
         opacity: 1;
         height: 70px;
         transition: all .5s ease;
+        background: rgba(255, 255, 255, .95) !important;
 
         @include media-breakpoint-down(sm) {
             height: auto;

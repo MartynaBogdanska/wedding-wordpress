@@ -9834,6 +9834,14 @@ a {
 
 a.navbar-brand {
   max-width: 300px; }
+  @media (max-width: 575.99px) {
+    a.navbar-brand {
+      max-width: 210px; } }
+
+.navbar-toggler {
+  border-color: transparent !important; }
+  .navbar-toggler:focus {
+    outline: none; }
 
 #navbarNavDropdown li a {
   font-size: 1rem;
@@ -9845,7 +9853,11 @@ a.navbar-brand {
   text-align: right; }
 
 .navbar-collapse {
-  flex-direction: row-reverse; }
+  flex-direction: row-reverse;
+  padding-right: 13px; }
+
+#site-navbar {
+  z-index: 1; }
 
 li.menu-item {
   margin-left: 10px; }
@@ -9868,7 +9880,8 @@ Fixed navigation on scroll
   .scrolled.bg-light {
     opacity: 1;
     height: 70px;
-    transition: all .5s ease; }
+    transition: all .5s ease;
+    background: rgba(255, 255, 255, 0.95) !important; }
     @media (max-width: 767.99px) {
       .scrolled.bg-light {
         height: auto; } }
